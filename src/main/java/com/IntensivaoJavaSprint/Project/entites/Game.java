@@ -18,7 +18,7 @@ public class Game {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String title;
-	@Column(name="tb_year")
+	@Column(name="game_year")
 	private String year;
 	private String genre;
 	private String platforms;
