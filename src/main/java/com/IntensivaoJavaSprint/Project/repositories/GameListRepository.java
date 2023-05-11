@@ -6,4 +6,6 @@ import com.IntensivaoJavaSprint.Project.entites.GameList;
 
 public interface GameListRepository extends JpaRepository<GameList, Long> {
 
+	
+
 }

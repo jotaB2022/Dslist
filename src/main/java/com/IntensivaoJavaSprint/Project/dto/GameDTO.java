@@ -1,6 +1,7 @@
 package com.IntensivaoJavaSprint.Project.dto;
 
 import com.IntensivaoJavaSprint.Project.entites.Game;
+import com.IntensivaoJavaSprint.Project.projections.GameMinProjection;
 
 public class GameDTO {
 
@@ -20,6 +21,14 @@ public class GameDTO {
 		year = entity.getYear();
 		imgUrl = entity.getImgUrl();
 		shortDescription = entity.getShortDescription();
+	}
+	
+	public GameDTO(GameMinProjection project) {
+		id = project.getId();
+		title = project.getTitle();
+		year = project.getYear();
+		imgUrl = project.getImgUrl();
+		shortDescription = project.getShortDescription();
 	}
 
 	public Long getId() {
